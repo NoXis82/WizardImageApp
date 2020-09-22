@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WizardImageApp</string>
+    <string name="rotateBtn">Повернуть</string>
+    <string name="invertBtn">Инверсия</string>
+    <string name="mirrorBtn">Отзеркалить</string>
+
+
+
+</resources>
