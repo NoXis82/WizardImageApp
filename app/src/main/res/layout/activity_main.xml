@@ -19,13 +19,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:orientation="vertical"
             android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_send"/>
+                android:src="@drawable/ic_add_image"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/imageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/imageViewText"/>
+
 
         </LinearLayout>
 
@@ -72,11 +81,12 @@
         android:orientation="vertical"
         android:padding="5dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello world"/>
+        <ListView
+            android:id="@+id/list_item_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/list_action_view"/>
 
     </LinearLayout>
- 
+
 </LinearLayout>
