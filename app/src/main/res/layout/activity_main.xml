@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <LinearLayout
         android:id="@+id/action_image"
         android:layout_width="match_parent"
@@ -21,6 +23,14 @@
             android:gravity="center"
             android:orientation="vertical"
             android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progressBarImage"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
 
             <ImageView
                 android:id="@+id/imageView"
@@ -51,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/rotateBtn"
                 android:textSize="12sp"
+                android:enabled="false"
                 android:layout_gravity="center"/>
 
             <Button
@@ -58,6 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/invertBtn"
+                android:enabled="false"
                 android:textSize="12sp"
                 android:layout_gravity="center"/>
 
@@ -66,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mirrorBtn"
+                android:enabled="false"
                 android:textSize="12sp"
                 android:layout_gravity="center"/>
 
@@ -79,13 +92,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:padding="4dp">
 
         <ListView
             android:id="@+id/list_item_action"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/list_action_view"/>
+            tools:listitem="@layout/list_action_view" />
 
     </LinearLayout>
 

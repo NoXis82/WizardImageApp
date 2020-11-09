@@ -3,7 +3,8 @@
     <string name="rotateBtn">Повернуть</string>
     <string name="invertBtn">Инверсия</string>
     <string name="mirrorBtn">Отзеркалить</string>
-    <string name="imageViewText">Нажмите для загрузки изображения</string>
+    <string name="imageViewText">Загрузить изображение</string>
+    <string name="image_result_action">image result action</string>
 
 
 </resources>
